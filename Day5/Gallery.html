@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocery shop | Gallery</title>
+  <link rel="stylesheet" href="CSS/gallery.css" />
+  <style>
+    /* Reset and base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Hero section */
+.gallery-hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(135deg, #f6f8f7, #d7efe7);
+}
+
+.gallery-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.gallery-hero p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Image grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Individual images */
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  animation: fadeInZoom 1s forwards;
+}
+
+/* Hover effect */
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Entry animation */
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgba(218, 165, 32, 0.877);
+        width: 100%;
+        display: none;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .navlinks.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+</style>
+</head>
+<body>
+  <section class="gallery-hero">
+    <h1>Gallery</h1>
+    <p>Discover the freshness, quality, and beauty of our products in action.</p>
+  </section>
+
+  <section class="gallery-grid">
+    <img src="images/lettuce.jpeg" alt="Fresh apples in basket">
+    <img src="images/limes.jpeg" alt="Organic vegetables on display">
+    <img src="images/cabbage.jpeg" alt="Fruit market scene">
+    <img src="images/Tangerines 🍊.jpeg" alt="Customer shopping experience">
+    <img src="images/Plum tomatoes.jpeg" alt="Boxed delivery of produce">
+    <img src="images/calabasita.jpeg" alt="Fresh berries close-up">
+    <img src="images/cucumber.jpeg" alt="Fresh berries close-up">
+    <img src="images/coco.jpeg" alt="Fresh berries close-up">
+    <img src="images/corosol.jpeg" alt="Fresh berries close-up">
+    <img src="images/cowli flower.jpeg" alt="Fresh berries close-up">
+    <img src="images/onion.jpeg" alt="Fresh berries close-up">
+    <img src="images/celery.jpeg" alt="Fresh berries close-up">
+    <img src="images/garlic.jpeg" alt="Fresh berries close-up">
+    <img src="images/guava.jpeg" alt="Fresh berries close-up">
+    <img src="images/red bell.jpeg" alt="Fresh berries close-up">
+    <img src="images/red apple.jpeg" alt="Fresh berries close-up">
+    <img src="images/Radish.jpeg" alt="Fresh berries close-up">
+    <img src="images/saussage.jpeg" alt="Fresh berries close-up">
+    <img src="images/spinach.jpeg" alt="Fresh berries close-up">
+    <img src="images/avocado.jpeg" alt="Fresh berries close-up">
+  </section>
+    <!-- FOOTER (reuse from homepage) -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grocery Shop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
